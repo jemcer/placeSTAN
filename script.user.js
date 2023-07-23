@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/placeDE Template - Kopie
 // @namespace    http://tampermonkey.net/
-// @version      8.4.1
+// @version      8.4.3
 // @description  try to take over the canvas!
 // @author       placeDE Devs
 // @match        https://garlic-bread.reddit.com/embed*
@@ -14,7 +14,7 @@ const overlayImage = document.createElement('img');
 overlayImage.style = `position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;pointerEvents: 'none';`;
 
 function updateImage() {
-  const img_url = `https://cdn.discordapp.com/attachments/831534229552627793/1132745327196250283/overlay_target.png`;
+  const img_url = `https://cdn.discordapp.com/attachments/831534229552627793/1132746552453120030/overlay_target.png`;
   overlayImage.src = img_url + '?' + Date.now();
 }
 
