@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/placeDE Template - Kopie
 // @namespace    http://tampermonkey.net/
-// @version      8.3.1
+// @version      8.4.0
 // @description  try to take over the canvas!
 // @author       placeDE Devs
 // @match        https://garlic-bread.reddit.com/embed*
@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 const overlayImage = document.createElement('img');
-overlayImage.style = `position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1500px;pointerEvents: 'none';`;
+overlayImage.style = `position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;pointerEvents: 'none';`;
 
 function updateImage() {
   const img_url = `https://raw.githubusercontent.com/jemcer/placeSTAN/main/overlay_target.png`;
